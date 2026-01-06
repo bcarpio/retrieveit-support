@@ -13,8 +13,8 @@ When you ask a question:
 
 | Depth | Use Case |
 |-------|----------|
-| **3** | Quick, focused answers from top matches |
-| **5** | Default - good balance of speed and coverage |
+| **3** | Default - quick, focused answers from top matches |
+| **5** | Slightly broader search |
 | **10** | Broader search when topic spans multiple docs |
 | **20** | Deep dive when you need comprehensive coverage |
 | **30** | Maximum coverage for complex research questions |
@@ -35,7 +35,7 @@ When you ask a question:
 
 ## Tips
 
-- Start with the default (5) and increase if answers seem incomplete
+- Start with the default (3) and increase if answers seem incomplete
 - Higher depth = more context = potentially better answers, but slower
 - Very high depth may include less relevant content that could dilute the answer
 - For "summarize everything about X" questions, use higher depth
