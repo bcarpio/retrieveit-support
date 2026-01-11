@@ -96,9 +96,15 @@ The document should be searchable within a few minutes after the sync completes.
 
 ### Why doesn't my new site appear in the list?
 
-Make sure you have access to the site in SharePoint. RetrieveIt.AI can only see sites that your Microsoft account has permission to access. If you just got access, try:
-1. Click **Configure** to refresh the site list
-2. If it still doesn't appear, try disconnecting and reconnecting
+If you just created a new SharePoint site, it may take **a few minutes** to appear in the site list. This is because Microsoft's Graph API needs time to index new sites - the delay is on Microsoft's side, not RetrieveIt.AI.
+
+If your new site isn't appearing:
+1. **Wait 5-10 minutes** - New sites can take time to be discoverable via the API
+2. **Visit the site in SharePoint** - Sometimes accessing the site helps Microsoft index it faster
+3. **Refresh the Configure page** - The site list is fetched fresh each time you load this page
+4. **Check your permissions** - Make sure your Microsoft account has access to the site
+
+If the site still doesn't appear after 15-20 minutes, try disconnecting and reconnecting the SharePoint integration.
 
 ### I deleted a document in SharePoint. Is it removed from RetrieveIt.AI?
 
