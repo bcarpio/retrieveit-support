@@ -4,6 +4,17 @@ Items that need to be updated when features are implemented.
 
 ---
 
+## Notify Workspace Admins on Connection Failures
+
+**Current behavior:** Only org admins receive notifications when an integration connection fails (auth error, token expired, etc.)
+
+**Requested:** Workspace admins should also be notified since they manage the integrations for their workspace.
+
+**When implemented:**
+- [ ] Update `docs/integration-best-practices.md` to reflect that workspace admins are also notified
+
+---
+
 ## User Timezone Preferences
 
 **Feature:** Add timezone selection to user profile. Pass timezone to chat and instruct AI to convert UTC times to user's local timezone.
