@@ -4,6 +4,24 @@ Items that need to be updated when features are implemented.
 
 ---
 
+## Microsoft Partner Center Registration - BLOCKED
+
+**Status:** Waiting for Microsoft support (call Monday)
+
+**Issue:** Registration blocked during verification with error:
+- Reference: 715-123160
+- Transaction ID: 6486895d-7443-4a57-bed5-1465d179f102
+
+**Why it matters:** Publisher verification required for external customers to use SharePoint integration without "unverified" warnings or blocks.
+
+**Call Monday:** 1-800-642-7676
+- Have ready: EIN, DUNS (142286615), reference numbers above
+- Company: OutcomeOps LLC
+
+**Workaround for demos:** Customer's IT admin can grant admin consent for unverified apps.
+
+---
+
 ## Notify Workspace Admins on Connection Failures
 
 **Current behavior:** Only org admins receive notifications when an integration connection fails (auth error, token expired, etc.)
