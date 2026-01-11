@@ -59,13 +59,12 @@ Click **Disconnect** to remove the Gmail connection. This deletes all synced ema
 
 ## Labels Excluded by Default
 
-These system labels are excluded to avoid noise:
-- SPAM
-- TRASH
-- DRAFT
-- Promotions, Social, Updates, Forums (category tabs)
+These system labels are always excluded:
+- **SPAM** - Unwanted emails
+- **TRASH** - Deleted emails
+- **DRAFT** - Unfinished drafts
 
-You can still manually include them if needed.
+Gmail's category tabs (Promotions, Social, Updates, Forums) are **not** excluded. Emails in these tabs are still in your Inbox - the tabs are just a visual organization feature in Gmail.
 
 ## Tips
 
@@ -73,6 +72,46 @@ You can still manually include them if needed.
 - Use a shorter date range initially to test
 - Create Gmail labels to organize emails you want searchable
 - Review your label selection periodically
+
+## Frequently Asked Questions
+
+### What does "Sync Now" do?
+
+**Sync Now** performs an incremental sync - it only fetches new emails that arrived since the last sync. It does not re-download all your emails.
+
+### I added new labels to my configuration. Will old emails with those labels be synced?
+
+No. When you add new labels to an existing configuration, only **new emails** from those labels (received after you save the config) will be synced. To include older emails from the new labels, you need to do a full resync (see below).
+
+### How do I force a full resync of all emails?
+
+To resync all emails from scratch:
+1. Click **Disconnect** to remove the Gmail connection
+2. Wait for all data to be deleted (this may take a minute)
+3. Click **Connect Gmail** to reconnect
+4. Configure your labels and date range
+5. Click **Save & Start Sync**
+
+This will import all emails matching your configuration fresh.
+
+### I changed my date range. Will it sync older emails now?
+
+Similar to labels - changing the date range only affects new syncs going forward. To include emails from the expanded date range, do a full resync by disconnecting and reconnecting.
+
+### How often does automatic sync happen?
+
+Emails are synced automatically every 15 minutes for active connections.
+
+### Why are some emails missing?
+
+Check these common causes:
+- The email might be in a label you haven't selected
+- The email might be older than your configured date range
+- The email might still be syncing (large inboxes take time)
+
+### Can I search email attachments?
+
+Yes! Supported attachment types (PDF, Word, Excel, PowerPoint, text files) are extracted and indexed. You can search for content within attachments.
 
 ## Privacy & Security
 
