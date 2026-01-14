@@ -100,7 +100,7 @@ Similar to labels - changing the date range only affects new syncs going forward
 
 ### How often does automatic sync happen?
 
-Emails are synced automatically every 15 minutes for active connections.
+Emails are synced automatically every hour for active connections.
 
 ### Why are some emails missing?
 
